@@ -1,0 +1,40 @@
+escape M-w
+definekey top M-Tab next
+definekey top M-ISO_Left_Tab prev
+definekey top M-h focusleft
+definekey top M-j focusdown
+definekey top M-k focusup
+definekey top M-l focusright
+definekey top M-H removeleft
+definekey top M-J removedown
+definekey top M-K removeup
+definekey top M-L removeright
+definekey top M-x hsplit
+definekey top M-y vsplit
+definekey top M-C-h exchangeleft
+definekey top M-C-j exchangedown
+definekey top M-C-k exchangeup
+definekey top M-C-l exchangeright
+definekey top M-3 exec amixer -q set Master 3dB-
+definekey top M-4 exec amixer -q set Master 3dB+
+definekey top M-Escape exec amixer sset Master toggle
+definekey top M-semicolon exec
+definekey top M-colon colon
+definekey top M-R restart
+definekey top M-Q quit
+definekey top M-d delete
+definekey top M-D kill
+definekey top M-f only
+definekey top M-b banish
+definekey top M-Space exec dmenu_run
+definekey top M-F7 exec xbacklight +20
+definekey top M-F6 exec xbacklight -10
+definekey top M-F9 exec toggletouchpad 
+exec nitrogen --restore
+exec xmodmap -e "clear lock"
+exec xmodmap -e "keycode 66 = Escape"
+exec xsetroot -cursor_name left_ptr -fg white -bg black
+set border 0
+set padding 0 0 0 0
+definekey top M-g exec dmenu_run
+exec xrdb -load ~/.Xresources &
